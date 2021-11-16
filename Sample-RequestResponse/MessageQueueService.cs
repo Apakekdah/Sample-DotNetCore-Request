@@ -48,7 +48,7 @@ namespace Sample_RequestResponse
                     //e.BindQueue = true;
                     e.Bind("os", ctx =>
                     {
-                        // this routing only available for Exchange only :(
+                        // this routing only for Exchange only but not for ExchangeBind :(
                         ctx.RoutingKey = "RouteKeyX";
                         ctx.ExchangeType = ExchangeType.Direct;
                         ctx.Durable = false;
