@@ -1,2 +1,3 @@
 # Sample-DotNetCore-Request-Exception
- Infinite loop until crash
+ Welcome to the loop error :(
+ Error : 312 (No Route)

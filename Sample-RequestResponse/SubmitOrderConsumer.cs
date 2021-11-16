@@ -11,6 +11,7 @@ namespace Sample_RequestResponse
         {
             var orderId = context.Message.OrderId;
 
+            // Welcome to the loop error
             throw new ArgumentNullException("Test argument error");
 
             await context.RespondAsync(new OrderAccepted

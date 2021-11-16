@@ -1,4 +1,5 @@
-﻿using MassTransit;
+﻿using GreenPipes;
+using MassTransit;
 using MassTransit.RabbitMqTransport;
 using MassTransit.RabbitMqTransport.Configuration;
 using MassTransit.RabbitMqTransport.Topology.Settings;
@@ -55,6 +56,10 @@ namespace Sample_RequestResponse
                     });
 
                     e.Consumer(typeof(SubmitOrderConsumer), f => new SubmitOrderConsumer());
+
+                    e.UseMessageRetry(c => c.None());
+
+                    e.UseRetry(c => c.None());
 
                     //e.Handler<SubmitOrder>(context =>
                     //{
