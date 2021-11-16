@@ -1,7 +1,7 @@
 ﻿namespace MessageContracts
 {
-    public interface SubmitOrder
+    public class SubmitOrder
     {
-        string OrderId { get; }
+        public string OrderId { get; set; }
     }
 }

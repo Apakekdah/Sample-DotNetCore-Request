@@ -1,7 +1,7 @@
 namespace MessageContracts
 {
-    public interface OrderItem
+    public class OrderItem
     {
-        string OrderId { get; }
+        public string OrderId { get; set; }
     }
 }
